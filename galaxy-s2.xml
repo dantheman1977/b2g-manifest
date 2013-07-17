@@ -5,15 +5,15 @@
            fetch="https://android.googlesource.com/" />
   <remote name="b2g"
           fetch="git://github.com/mozilla-b2g/" />
-  <remote  name="linaro"
-           fetch="http://android.git.linaro.org/git-ro/" />
+  <remote  name="cooper"
+           fetch="https://github.com/dantheman1977/android_device_samsung_cooper-1" />
   <remote name="mozilla"
 	  fetch="git://github.com/mozilla/" />
   <remote name="mozillaorg"
       fetch="https://git.mozilla.org/releases" />
   <remote name="apitrace" fetch="git://github.com/apitrace/" />
   <default revision="refs/tags/android-4.0.4_r1.2"
-           remote="linaro"
+           remote="cooper"
            sync-j="4" />
 
   <!-- Gonk specific things and forks -->
@@ -52,7 +52,7 @@
   <project path="external/flac" name="platform/external/flac" />
   <project path="external/freetype" name="platform/external/freetype" />
   <project path="external/giflib" name="platform/external/giflib" />
-  <project path="external/gtest" name="platform/external/gtest" remote="linaro" revision="master" />
+  <project path="external/gtest" name="platform/external/gtest" remote="cooper" revision="master" />
   <project path="external/harfbuzz" name="platform/external/harfbuzz" />
   <project path="external/icu4c" name="platform/external/icu4c" />
   <project path="external/iptables" name="platform/external/iptables" />
@@ -100,7 +100,7 @@
   <project path="system/vold" name="platform/system/vold" />
 
   <!-- Galaxy S2 things -->
-  <project path="device/samsung/galaxys2" name="android-device-galaxys2" remote="b2g" revision="master" />
+  <project path="device/samsung/cooper" name="android-device-cooper" remote="b2g" revision="master" />
   <project path="hardware/broadcom/wlan" name="platform/hardware/broadcom/wlan" />
   <project path="external/skia" name="skia-b2g-sgs2" remote="b2g" revision="master" />
 
